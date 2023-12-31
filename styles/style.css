@@ -2,7 +2,15 @@
 
 * {
   font-family: "Roboto", sans-serif !important;
+  list-style: none;
+  /* margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important; */
 }
+body{
+  /* overflow-x: hidden !important; */
+}
+
 header {
   background: rgba(147, 193, 212, 0.46);
 }
@@ -71,6 +79,7 @@ header {
   height: 574px !important;
   flex-shrink: 0;
   line-height: 4rem !important;
+  width: 100%;
 }
 
 .home_page h1 {
@@ -132,7 +141,7 @@ header {
 
 .Home_second1 .para1 p {
   color: #000 !important;
-  width: 50%;
+  width: auto;
   font-family: Roboto;
   font-size: 45px !important;
   font-weight: 700;
@@ -153,7 +162,7 @@ header {
   background-color: #fffffe;
   border-radius: 15px;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   border: 3px solid black;
 }
 
@@ -700,15 +709,15 @@ header {
   box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.3);
 }
 .list {
-    width: 60%;
-    margin: auto;
-    text-align: center;
+  width: 60%;
+  margin: auto;
+  text-align: center;
 }
 .last1 h1 {
   text-align: center !important;
   font-weight: 900 !important;
   /* margin: auto; */
-  margin-top: 3rem  !important;
+  margin-top: 3rem !important;
 }
 
 .line {
@@ -718,15 +727,210 @@ header {
   /* margin-top: 7rem !important; */
   margin: auto;
   /* text-align: center; */
-  
-
 }
 
-.list h5{
+.list h5 {
   font-weight: 900 !important;
   font-size: 18px !important;
 }
 
 .list p {
   font-size: 14px !important;
+}
+
+.footer {
+  padding-top: 5rem !important;
+  border: 1px solid #c2c2c2;
+  background: #f9f9f9;
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+  padding-bottom: 1rem !important;
+}
+.icone {
+}
+.footer1 {
+  width: auto;
+  height: auto;
+  background-color: #7bb2ca;
+}
+
+.footer_part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.itemList ul {
+  column-gap: 2rem !important;
+}
+
+.itemList ul li {
+  font-weight: 900 !important;
+}
+.footer_part p {
+  font-weight: 900 !important;
+}
+
+@media screen and (max-width: 720px) {
+  .secontPart {
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+  }
+
+  .Home_second1 .para1 p {
+    width: 100%;
+    font-family: Roboto;
+    font-size: 40px !important;
+    line-height: 4rem !important;
+  }
+
+  .card {
+    width: auto;
+    margin: auto;
+  }
+
+  .small_card {
+    position: absolute;
+    top: -0.7rem;
+    left: 11.5rem;
+    width: 150px;
+    height: 90px;
+    text-align: center;
+    position: relative;
+  }
+
+  .rounded_profile {
+    width: 390px;
+    height: 390px;
+    flex-shrink: 0;
+    border-radius: 670px;
+    background: linear-gradient(
+      180deg,
+      rgba(49, 82, 130, 0.68) 0%,
+      rgba(201, 222, 231, 0.68) 100%
+    );
+    box-shadow: 8px 5px 4px 15px rgba(0, 0, 0, 0.21);
+    margin: auto !important;
+  }
+
+  .firtPart {
+    position: absolute;
+    top: 7.4rem;
+    left: 7.7rem;
+    width: 140px;
+    height: auto;
+    text-align: center;
+    position: relative;
+  }
+  .firtPart img {
+    margin-top: 0.6rem !important;
+  }
+
+  .firtPart1 {
+    position: absolute;
+    top: -5.8rem;
+    left: 3.9rem;
+    width: 80px;
+    height: 60px;
+    text-align: center;
+    line-height: 0.2rem !important;
+    background-color: #ffffffb6;
+    border-radius: 20px;
+    position: relative;
+    border: 3px solid rgba(0, 0, 0, 0.823);
+    z-index: 0;
+  }
+
+  .firtPart1 img {
+    margin-top: 0.6rem !important;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+  }
+
+  .firtPart2 {
+    position: absolute;
+    top: 4.9rem;
+    left: 14.2rem;
+    width: 70px;
+    height: auto;
+    text-align: center;
+    position: relative;
+  }
+
+  .firtPart2 img {
+    margin-top: 0.6rem !important;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+  }
+
+
+
+  .whatUp img,
+  .interNet img,
+  .gmail img,
+  .linkIN img {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50px !important;
+  }
+
+  .whatUp img,
+  .interNet img,
+  .gmail img,
+  .linkIN img :hover {
+    transform: scale(1.1) !important;
+  }
+
+  .linkIN {
+    position: absolute;
+    top: -14.2rem;
+    left: 5.6rem;
+    position: relative;
+  }
+  .whatUp {
+    position: absolute;
+    top: -10.2rem;
+    left: 10.2rem;
+    position: relative;
+  }
+
+  .interNet {
+    position: absolute;
+    top: -17.1rem;
+    right: 10.2rem;
+    position: relative;
+  }
+
+  .gmail {
+    position: absolute;
+    top: -6.4rem;
+    right: 6.8rem;
+    position: relative;
+  }
+
+  .sidePara1 {
+    margin: auto;
+    text-align:center !important;
+    width: auto !important;
+  }
+  .sidePara1 h2 {
+    font-size: 35px;
+    margin: auto !important;
+  }
+}
+
+@media screen and (max-width: 690px) {
+
+  body{
+    background-color: red;
+    /* overflow-x: hidden !important; */
+
+
+
+  }
 }
